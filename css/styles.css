@@ -15,6 +15,8 @@ ul {
 
 img {
     display: block;
+    width: 100%;
+    height: auto;
 }
 
 body {
@@ -25,11 +27,11 @@ body {
 
 .container {
     width: 100%;
-    max-width: 1158px;
+    min-width: 320px;
     padding-left: 15px;
     padding-right: 15px;
     margin: 0 auto;
-    /* outline: 2px solid red; */
+    outline: 2px solid red;
 }
 
 .header {
@@ -305,25 +307,13 @@ body {
 
 
 .team {
-    padding-top: 120px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
+    justify-content: center;
 }
 
 .team-color {
     background: var(--brand-team-color);
-}
-
-.team-list {
-    justify-content: center;
-    gap: 24px;
-}
-
-.team-wrap {
-    padding-top: 32px;
-    padding-bottom: 32px;
-    text-align: center;
-    border-radius: 0px 0px 4px 4px;
-    background: var(--brand-team-wrap);
 }
 
 .sec-four {
@@ -334,6 +324,22 @@ body {
     margin-bottom: 72px;
     text-align: center;
     color: var(--brand-color);
+}
+
+.team-list {
+    width: 264px;
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+    margin: 0 auto;
+}
+
+.team-wrap {
+    padding-top: 32px;
+    padding-bottom: 32px;
+    text-align: center;
+    border-radius: 0px 0px 4px 4px;
+    background: var(--brand-team-wrap);
 }
 
 .sec-four-name {
@@ -387,8 +393,8 @@ body {
 
 
 .company-section {
-    padding-top: 130px;
-    padding-bottom: 120px;
+    padding-top: 96px;
+    padding-bottom: 96px;
 }
 
 .company-title {
@@ -400,13 +406,15 @@ body {
 }
 
 .company-list {
+    width: 190px;
     display: flex;
-    justify-content: center;
-    gap: 24px;
+    flex-direction: column;
+    gap: 72px;
+    margin: 0 auto;
 }
 
 .company-item {
-    width: 168px;
+    width: 190px;
     height: 88px;
 }
 
@@ -439,24 +447,39 @@ body {
 
 
 .back-color {
-    padding-top: 100px;
-    padding-bottom: 100px;
+    padding-top: 96px;
+    padding-bottom: 96px;
     background-color: var(--brand-back-color);
 }
 
+.footer-container {
+    flex-direction: column;
+}
+
+.titel-footer {
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 72px;
+    /* margin: 0 auto; */
+}
+
 .logo-footer {
+    /* justify-content: center; */
     font-family: 'Raleway',
         sans-serif;
     font-weight: 800;
     font-size: 18px;
     line-height: 1.33;
     margin-bottom: 16px;
-    display: inline-block;
+    display: flex;
+    align-items: center;
+    /* margin: 0 auto; */
+    /* display: inline-block; */
     color: var(--brand-logo-footer)
 }
 
 .footer-text {
-    justify-content: flex-start;
+    /* justify-content: flex-start; */
     max-width: 264px;
     font-size: 16px;
     line-height: 1.5;
@@ -465,7 +488,7 @@ body {
 }
 
 .social-media {
-    margin-left: 120px;
+    margin-bottom: 72px;
 }
 
 .footer-name {
@@ -504,17 +527,14 @@ body {
     background-color: #31D0AA;
 }
 
-.footer-container {
-    display: flex;
-}
 
-.footer-form-subskribe {
+/* .footer-form-subskribe {
     margin-left: 80px;
-}
+} */
 
-.footer-form-field {
+/* .footer-form-field {
     display: flex;
-}
+} */
 
 .footer-form-desc {
     display: block;
@@ -534,8 +554,9 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.3);
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
     border-radius: 4px;
-    width: 264px;
+    width: 100%;
     height: 40px;
+    margin-bottom: 16px;
     transition: fill 2500ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -563,7 +584,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-left: 24px;
+    /* margin-left: 24px; */
     padding: 0;
 
     color: var(--brand-main-btn);
